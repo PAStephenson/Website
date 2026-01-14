@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Web & IT Solutions</title>
+    <meta name="description" content="Custom web development, hosting management, and small business IT support.">
+    <style>
+        /* The Official Nord Color Palette */
+        :root {
+            /* Polar Night (Dark Backgrounds) */
+            --nord0: #2e3440;
+            --nord1: #3b4252;
+            --nord2: #434c5e;
+            --nord3: #4c566a;
+            
+            /* Snow Storm (Text) */
+            --nord4: #d8dee9;
+            --nord5: #e5e9f0;
+            --nord6: #eceff4;
+
+            /* Frost (Accents) */
+            --nord7: #8fbcbb; /* Teal */
+            --nord8: #88c0d0; /* Cyan */
+            --nord9: #81a1c1; /* Blue */
+            --nord10: #5e81ac; /* Dark Blue */
+
+            /* Aurora (Status/Highlights) */
+            --nord11: #bf616a; /* Red */
+            --nord14: #a3be8c; /* Green */
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--nord0);
+            color: var(--nord4);
+            line-height: 1.6;
+            padding: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        /* Typography */
+        h1, h2, h3 { color: var(--nord6); }
+        h1 { 
+            font-size: 3rem; 
+            margin-bottom: 0.5rem; 
+            letter-spacing: -0.05rem;
+            background: -webkit-linear-gradient(0deg, var(--nord7), var(--nord9));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        h2 { font-size: 2rem; margin-bottom: 1.5rem; text-align: center; }
+        p { margin-bottom: 1.5rem; color: var(--nord4); font-size: 1.1rem; }
+        /* Header */
+        header { 
+            padding: 5rem 0; 
+            text-align: center;
+            border-bottom: 1px solid var(--nord2);
+            animation: fadeIn 1s ease-in;
+        }
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Slightly wider cards */
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .service-card {
+            background: var(--nord1);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid var(--nord2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        /* Fancy Hover Effect */
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            border-color: var(--nord8);
+        }
+        .service-card h3 { 
+            margin-bottom: 1rem; 
+            color: var(--nord8); 
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        /* Buttons */
+        .cta-section {
+            text-align: center; 
+            background: var(--nord1); 
+            padding: 4rem 2rem; 
+            border-radius: 16px; 
+            margin-top: 4rem;
+            border: 1px solid var(--nord2);
+        }
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--nord10) 0%, var(--nord9) 100%);
+            color: var(--nord6);
+            padding: 16px 32px;
+            text-decoration: none;
+            border-radius: 50px; /* Pill shape */
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.2s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .cta-button:hover { 
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+            color: white;
+        }
+        footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--nord2);
+            font-size: 0.9rem;
+            color: var(--nord3);
+            text-align: center;
+        }
+        /* Simple Fade Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @media (max-width: 600px) {
+            h1 { font-size: 2.2rem; }
+            body { padding: 1rem; }
+            .service-card { padding: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Paul Stephenson</h1>
+        <p>
+            ✨ Digital craftsmanship for your web presence.<br>
+            🛠️ Reliable IT support for your small business.
+        </p>
+    </header>
+    <section>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>🎨 Design & Build</h3>
+                <p>Custom-built websites and web applications tailored to your needs.</p>
+            </div>
+            <div class="service-card">
+                <h3>🚀 Deploy & Host</h3>
+                <p>I manage the cloud infrastructure so you don't have to.</p>
+            </div>
+            <div class="service-card">
+                <h3>🔄 Maintain & Care</h3>
+                <p>Websites need love too. I handle all software updates, security patches, and content tweaks to keep your site running smoothly year-round.</p>
+            </div>
+            <div class="service-card">
+                <h3>💻 IT Support</h3>
+                <p>Running a small business? I provide on-call tech support for your office hardware, software troubleshooting and email setup</p>
+            </div>
+        </div>
+    </section>
+    <section class="cta-section">
+        <p>Whether you need a new website or someone to fix the office printer, I'm here to help. <br>Drop me an email and let's chat.</p>
+        <a href="mailto:mail@paul-stephenson.co.uk" class="cta-button">📧 Email Me</a>
+    </section>
+    <footer>
+    </footer>
+</body>
+</html>
